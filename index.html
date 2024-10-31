@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Curriculum Vitae - David</title>
   </head>
   <body>
@@ -26,9 +35,12 @@
           </li>
         </ul>
       </nav>
-
-      <h1 class="header__title">Organisateur de Banquets Médiévaux</h1>
-      <img class="header__img" src="" alt="" />
+      <div class="header__background-container">
+        <h1 class="header__title">
+          <span class="header__title-span">F.R. DAVID</span>
+          Organisateur de Banquets Médiévaux
+        </h1>
+      </div>
     </header>
 
     <main class="main">
@@ -44,15 +56,24 @@
         </p>
       </section>
       <section id="main__experience" class="main__experience">
-        <h2 class="main__section-title">Experience</h2>
+        <h2 class="main__section-title main__experience-section-title">
+          Experience
+        </h2>
         <ul class="main__experience-list">
           <li class="main__experience-item">
             <h3 class="main__experience-title">
               Organisateur de Banquets pour la Maison Stark
             </h3>
-            <p class="main__experience-location">Hiverfell, Royaume du Nord</p>
-            <p class="main__experience-year">Janvier 298 AC</p>
-            <ul>
+            <img
+              src="./images/stark.webp"
+              alt="Banquet Stark"
+              class="main__experience-img"
+            />
+            <p class="main__experience-location main__location">
+              Hiverfell, Royaume du Nord
+            </p>
+            <p class="main__experience-year main__year">Janvier 298 AC</p>
+            <ul class="main__description">
               <li class="main__experience-description">
                 Planification de banquets grandioses, comme le Banquet du Retour
                 de Robb.
@@ -71,11 +92,18 @@
             <h3 class="main__experience-title">
               Consultant en Événements pour la Maison Targaryen
             </h3>
-            <p class="main__experience-location">Dragonstone, Westeros</p>
-            <p class="main__experience-year">
+            <img
+              src="./images/targaryen.webp"
+              alt="Banquet Stark"
+              class="main__experience-img"
+            />
+            <p class="main__experience-location main__location">
+              Dragonstone, Westeros
+            </p>
+            <p class="main__experience-year main__year">
               Février 297 AC – Décembre 297 AC
             </p>
-            <ul>
+            <ul class="main__description">
               <li class="main__experience-description">
                 Réalisation de banquets spectaculaires pour le retour de
                 Daenerys.
@@ -93,9 +121,18 @@
             <h3 class="main__experience-title">
               Organisateur de Fêtes pour le Royaume de Dorne
             </h3>
-            <p class="main__experience-location">Sable de Dorne</p>
-            <p class="main__experience-year">Mai 295 AC – Janvier 297 AC</p>
-            <ul>
+            <img
+              src="./images/dorne.webp"
+              alt="Banquet Stark"
+              class="main__experience-img"
+            />
+            <p class="main__experience-location main__location">
+              Sable de Dorne
+            </p>
+            <p class="main__experience-year main__year">
+              Mai 295 AC – Janvier 297 AC
+            </p>
+            <ul class="main__description">
               <li class="main__experience-description">
                 Spécialiste des fêtes en plein air avec musique envoûtante.
               </li>
@@ -114,61 +151,102 @@
         <h2 class="main__section-title">Compétences</h2>
         <ul class="main__skill-list">
           <li class="main__skill-item">
-            <h3 class="main__skill-title">Planification de Menus Épiques</h3>
-            <img src="" alt="" />
-            <p class="main__skill-description">
-              Confection de plats dignes des banquets de la Cour.
-            </p>
+            <img
+              class="main__skill-img"
+              src="./images/icons/banquet.png"
+              alt="icon de banquet"
+            />
+            <!-- <p class="main__skill-title">Menus</p> -->
           </li>
           <li class="main__skill-item">
-            <h3 class="main__skill-title">Gestion de la Sécurité</h3>
-            <img src="" alt="" />
-            <p class="main__skill-description">
-              Prévention d’empoisonnements et autres “accidents”.
-            </p>
+            <img
+              class="main__skill-img"
+              src="./images/icons/defence.png"
+              alt="icon de defense"
+            />
+            <!-- <p class="main__skill-title">Sécurité</p> -->
           </li>
           <li class="main__skill-item">
-            <h3 class="main__skill-title">Créativité Événementielle</h3>
-            <img src="" alt="" />
-            <p class="main__skill-description">
-              Transformation de n’importe quelle salle en festin royal.
-            </p>
+            <img
+              class="main__skill-img"
+              src="./images/icons/tueur.png"
+              alt="icon de tueur"
+            />
+            <!-- <p class="main__skill-title">Créativité</p> -->
           </li>
           <li class="main__skill-item">
-            <h3 class="main__skill-title">Négociation de Contrats</h3>
-            <img src="" alt="" />
-            <p class="main__skill-description">
-              Diplomatie pour satisfaire les différentes maisons.
-            </p>
+            <img
+              class="main__skill-img"
+              src="./images/icons/drapeau.png"
+              alt="icon drapeau"
+            />
+            <!-- <p class="main__skill-title">Négociation de Contrats</p> -->
+          </li>
+          <li class="main__skill-item">
+            <img
+              class="main__skill-img"
+              src="./images/icons/dragon.png"
+              alt="icon dragon"
+            />
+            <!-- <p class="main__skill-title">Négociation de Contrats</p> -->
+          </li>
+          <li class="main__skill-item">
+            <img
+              class="main__skill-img"
+              src="./images/icons/map.png"
+              alt="icon map"
+            />
+            <!-- <p class="main__skill-title">Négociation de Contrats</p> -->
+          </li>
+          <li class="main__skill-item">
+            <img
+              class="main__skill-img"
+              src="./images/icons/chevalier.png"
+              alt="icon map"
+            />
+            <!-- <p class="main__skill-title">Négociation de Contrats</p> -->
+          </li>
+          <li class="main__skill-item">
+            <img
+              class="main__skill-img"
+              src="./images/icons/argent.png"
+              alt="icon map"
+            />
+            <!-- <p class="main__skill-title">Négociation de Contrats</p> -->
           </li>
         </ul>
       </section>
       <section id="main__education" class="main__education">
-        <h2 class="main__section-title">Éducation</h2>
+        <h2 class="main__section-title main__section__skill-title">
+          Éducation
+        </h2>
         <ul class="main__education-list">
           <li class="main__education-item">
             <h3 class="main__education-title">
               Diplôme en Organisation d'Événements Épiques
             </h3>
-            <p class="main__education-location">
+            <p class="main__education-location main__location">
               Université de Westeros, Ville de Port-Réal
             </p>
-            <p class="main__education-year">Septembre 290 AC – Juin 293 AC</p>
+            <p class="main__education-year main__year">
+              Septembre 290 AC – Juin 293 AC
+            </p>
             <ul>
               <li class="main__education-description">
                 Spécialisation en banquets médiévaux et gestion des conflits.
               </li>
             </ul>
           </li>
-
           <li class="main__education-item">
             <h3 class="main__education-title">
               Certificat en Cuisine Médiévale
             </h3>
-            <p class="main__education-location">
+            <p class="main__education-location main__location">
               Académie des Arts Culinaires de Riverrun
             </p>
-            <p class="main__education-year">Juillet 289 AC – Août 290 AC</p>
+            <p class="main__education-year main__year">
+              Juillet 289 AC – Août 290 AC
+            </p>
             <ul>
               <li class="main__education-description">
                 Techniques de cuisine médiévale avec projet final : organisation
@@ -180,7 +258,7 @@
       </section>
       <section id="main__contact" class="main__contact">
         <h2 class="main__section-title">Contact</h2>
-        <form action="#">
+        <form class="main__contact-form" action="#">
           <label for="firstName"></label>
           <input
             type="text"
@@ -206,14 +284,15 @@
             <option value="theSouthernLands">Les Territoires du Sud</option>
           </select>
 
-          <label for="subject">Subject</label>
+          <label for="subject">Message</label>
           <textarea
+            class="main__contact-textarea"
             id="subject"
             name="subject"
-            placeholder="Ecrivez-moi le Dompteur de Dragons 'Alexis' vas se charger de l'envoi."
+            placeholder="Écrivez-moi… Le message sera envoyé par tapis volant ou, en express, à dos de dragon.."
           ></textarea>
 
-          <input type="submit" value="Envoyer" />
+          <input class="main__contact-submit" type="submit" value="Envoyer" />
         </form>
       </section>
     </main>
